@@ -1,0 +1,63 @@
+* {
+    box-sizing: border-box;
+}
+[name="description"] {
+    height: 200px;
+}
+table tr td {
+    vertical-align: middle;
+}
+body > .card {
+    margin: 5px auto;
+}
+figure,
+figure img {
+    width: 100%;
+}
+/* Aside */
+#aside-left {
+    float: left;
+    width: 20%;
+    padding: 10px;
+}
+#aside-left + #content {
+    float: right;
+    width: 80%;
+    padding: 10px;
+}
+.form-card {
+    max-width: 350px;
+    margin: 5px auto;
+}
+@media (max-width: 1200px) {
+    body > .card {
+        width: 1200px;
+    }
+}
+@media (min-width: 1024px) {
+    body > .card {
+        width: 1024px;
+    }
+
+}
+@media (max-width: 1023px) {
+    /* Aside */
+    #aside-left {
+        float: unset;
+        width: 100%;
+    }
+    #aside-left + #content {
+        float: unset;
+        width: 100%;
+    }
+    body > .card {
+        width: 95%;
+    }
+
+}
+@media (max-width: 400px) {
+    td.image,
+    th.image {
+        display: none;
+    }
+}
